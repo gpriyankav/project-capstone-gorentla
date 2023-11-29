@@ -75,6 +75,8 @@ The model's performance is evaluated using the loss values during training, visu
 # Visualization:</br>
 The true values and predicted values are visualized using matplotlib to compare the original sine wave with the predicted values.</br>
 
+![Alt text](image.png)
+
 # Exploratory Data Analysis and Machine Learning Model Implementation Code Explanation i.e EDA.ipynb </br>
 
 # Loading Data: </br>
@@ -94,6 +96,7 @@ A Linear Regression model is implemented using scikit-learn. The 'DATE' column i
 
 # Model Training:</br>
 The Linear Regression model is trained on the training set.Predictions are made on the testing set, and metrics like Mean Squared Error (MSE) and R-squared (R2) are calculated.</br>
+![Alt text](image-1.png)
 
 # Cross-Validation: </br>
 K-fold cross-validation is performed to assess the model's performance.Mean Squared Error (MSE) scores for each fold are calculated and printed.The mean and standard deviation of MSE scores are provided. </br>
@@ -120,7 +123,9 @@ A TimeSeriesGenerator is created for training the LSTM model. </br>
 # LSTM Model: </br>
 1. A Sequential model is built using TensorFlow's Keras library, incorporating three LSTM layers with dropout for regularization. </br>
 2. The model is compiled using the Adam optimizer and Mean Squared Error (MSE) loss function. </br>
-
+![Alt text](image-2.png)
+![Alt text](image-3.png)
+![Alt text](image-4.png)
 # Training the Model: </br>
 The LSTM model is trained using the fit_generator method with the training TimeSeriesGenerator.
 Model performance is visualized by plotting the training loss over epochs. </br>
@@ -156,6 +161,8 @@ has been revised in resolutions, expands this range in larger, causing it to
 approach 1000. In both cases, the end-of-day reading was higher than ex-
 pected Testing was also included, the complex behavior of the LSTM model
 was better understood and the model parameters were modified .</br>
+
+![Alt text](image-5.png)
 
 # Conclusion </br>
 
